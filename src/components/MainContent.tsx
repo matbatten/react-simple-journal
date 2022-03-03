@@ -4,12 +4,12 @@ import JournalEntry from "./JournalEntry";
 function MainContent(): JSX.Element {
   return (
     <main>
-      <FixedEntry />
-      <FixedEntry />
       <JournalEntry
         title={"Discovering React components"}
         tags={["react", "components", "reusability"]}
-        body={"Today, I discovered reusable React components - I love them! It makes things so much more convenient!"}
+        body={
+          "Today, I discovered reusable React components - I love them! It makes things so much more convenient!"
+        }
         views={1}
         likes={1}
         postDate={{ month: "June", day: 13, year: 2021 }}
@@ -33,7 +33,7 @@ function MainContent(): JSX.Element {
         views={93}
         likes={11}
         postDate={{ month: "March", day: 2, year: 2003 }}
-        />
+      />
       <JournalEntry
         title={"The trolley problem"}
         tags={["philosophy"]}
@@ -43,7 +43,7 @@ function MainContent(): JSX.Element {
         views={2}
         likes={0}
         postDate={{ month: "July", day: 28, year: 2003 }}
-        />     
+      />
     </main>
   );
 }
